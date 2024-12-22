@@ -13,7 +13,7 @@ const AuthenticationPage: React.FC<AuthenticationPageProps> = ({
     <div className="h-[90vh] flex flex-col p-10 items-center ">
       <div className="flex gap-3 text-xl p-10">
         {titleArray.map((letter) => (
-          <p>{letter}</p>
+          <p key={letter}>{letter}</p>
         ))}
       </div>
       <div className="flex flex-col justify-between  items-center w-full h-full">
