@@ -13,11 +13,14 @@ const SignUpIntro = () => {
         </h1>
         <div className="flex flex-col w-full">
           <Link to={appUrls.signUpEmailHref}>
-            <Button variant={"customDefault"} className="p-6 w-full">
+            <Button variant={"customDefault"} className="w-full">
               Get Started
             </Button>
           </Link>
-          <Link className="flex justify-center pt-2" to={appUrls.loginHref}>
+          <Link
+            className="flex justify-center pt-2 underline"
+            to={appUrls.loginHref}
+          >
             Got an account? Login
           </Link>
         </div>

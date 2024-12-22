@@ -10,7 +10,7 @@ const AuthenticationPage: React.FC<AuthenticationPageProps> = ({
   const titleArray = ["C", "A", "C", "O", "P", "H", "O", "N", "Y"];
 
   return (
-    <div className="h-screen flex flex-col p-10 items-center">
+    <div className="h-[90vh] flex flex-col p-10 items-center ">
       <div className="flex gap-3 text-xl p-10">
         {titleArray.map((letter) => (
           <p>{letter}</p>
