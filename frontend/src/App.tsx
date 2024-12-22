@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { appUrls } from "./utils/urls";
 import { SignUpEmail, SignUpIntro, SignUpPassword } from "./_auth/forms";
-import { Home, WelcomeScreen } from "./_auth/pages";
+import { WelcomeScreen } from "./_auth/pages";
+import { Home } from "./_root/pages";
 
 function App() {
   return (
