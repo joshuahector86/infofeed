@@ -1,13 +1,17 @@
 # Info Feed Full Stack Web Development Project
 
-Tech being used as of December 21, 2024  
-FRONTEND  
+Tech being used as of December 21, 2024
+
+### FRONTEND
+
 Vite  
 ShadCN  
 TypeScript  
-React
+React  
+TailwindCSS
 
-BACKEND  
+### BACKEND
+
 Python  
 Flask  
 PostgresSQL (Potentially)
