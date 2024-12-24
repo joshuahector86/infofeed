@@ -13,7 +13,7 @@ const SignUpPassword = () => {
         <Input type="password" placeholder="retype password" />
       </div>
       <div className="w-full">
-        <Link to={appUrls.home}>
+        <Link to={appUrls.homeHref}>
           <Button className="w-full" variant={"customDefault"}>
             Continue
           </Button>

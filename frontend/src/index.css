@@ -12,9 +12,6 @@
 
 @layer base {
   :root {
-    display: flex;
-    justify-content: center;
-
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
     --card: 0 0% 3.9%;
@@ -43,6 +40,7 @@
     /* Added Colors */
     --button: 0 0% 8%;
     --button-text: 205 86.9% 61%;
+    --navbar: 0 0% 8.2%;
   }
 }
 

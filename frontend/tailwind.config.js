@@ -16,6 +16,10 @@ module.exports = {
           text: "hsl(var(--button-text))",
         },
 
+        navbar: {
+          DEFAULT: "hsl(var(--navbar))",
+        },
+
         // Given Colors
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

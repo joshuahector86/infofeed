@@ -10,6 +10,12 @@ export const appUrls = {
   // LOGIN URLS
   loginHref: "/login",
 
-  // HOME FEED URL
-  home: "/",
+  // HOME FEED URLS
+  homeHref: "/",
+  exploreHref: "/explore",
+
+  // Navbar URLS
+  subbedNavContentHref: "/subbed",
+  likedNavCollectionHref: "/liked",
+  settingsNavHref: "/settings",
 };
