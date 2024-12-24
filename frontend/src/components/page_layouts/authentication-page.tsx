@@ -9,9 +9,9 @@ const AuthenticationPage: React.FC<AuthenticationPageProps> = ({
   children,
 }) => {
   return (
-    <div className="flex flex-col p-10 items-center ">
+    <div className="flex h-[80vh] flex-col p-10 items-center ">
       <AppTitle />
-      <div className="flex flex-col justify-between  items-center w-full h-full">
+      <div className="flex flex-col justify-between  items-center w-full h-[30vh] ">
         {children}
       </div>
     </div>

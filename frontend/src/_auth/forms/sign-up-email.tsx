@@ -8,8 +8,8 @@ const SignUpEmail = () => {
   return (
     <AuthenticationPage>
       <h1>What's your email address?</h1>
-      <Input type="text" placeholder="You@you.com" />
       <div className="w-full">
+        <Input type="text" className="mb-10" placeholder="You@you.com" />
         <Link to={appUrls.signUpPasswordHref}>
           <Button className="w-full" variant={"customDefault"}>
             Continue

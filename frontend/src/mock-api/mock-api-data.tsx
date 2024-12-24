@@ -27,6 +27,12 @@ export const mockDataCards = [
     cardImage: cat,
     userImage: genericHuman,
     category: "#Cat",
-    caption: "",
+    caption: `
+    Crazy cat lady and proud! 🐾 My days are spent knitting tiny sweaters for
+     my 12 fur babies, arguing with them about who gets the comfy chair, and 
+     sharing our adventures on Catstagram (yes, they all have accounts). If you 
+     don’t like the smell of tuna or the sound of purring, we probably won’t 
+     get along. 🐱🧶
+    `,
   },
 ];
