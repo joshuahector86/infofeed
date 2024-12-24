@@ -13,7 +13,10 @@ const ExploreFeed = () => {
   return (
     <>
       {data.map((card) => (
-        <Card key={card.date} className="w-screen mb-4 border-none">
+        <Card
+          key={card.date}
+          className="w-screen mb-4 border-none max-w-[500px]"
+        >
           <CardHeader className="flex-row justify-between items-center">
             <div>
               <h1>{card.title}</h1>

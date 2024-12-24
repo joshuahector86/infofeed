@@ -1,7 +1,6 @@
 import AppTitle from "@/components/apptitle";
 import AppPage from "@/components/page_layouts/app-page";
 import { Button } from "@/components/ui/button";
-import { AlignJustify, PlusIcon } from "lucide-react";
 import { useState } from "react";
 import ExploreFeed from "./explore-feed";
 
@@ -28,21 +27,23 @@ const Home = () => {
         </AppPage>
       ) : (
         <AppPage>
-          <div className="flex items-center">
-            <AlignJustify />
-            <AppTitle />
-            <PlusIcon />
-          </div>
+          <div className="h-[30vh] flex flex-col justify-between">
+            <div className="flex justify-center">
+              <AppTitle />
+            </div>
 
-          <div className="h-[50%] flex flex-col gap-1">
-            <h2>Subscribe to some content to get started!</h2>
-            <Button
-              variant={"customDefault"}
-              onClick={() => setHasSubscribedToContent(!hasSubscribedToContent)}
-              className="w-full"
-            >
-              To the content!
-            </Button>
+            <div className="flex flex-col gap-1">
+              <h2>Subscribe to some content to get started!</h2>
+              <Button
+                variant={"customDefault"}
+                onClick={() =>
+                  setHasSubscribedToContent(!hasSubscribedToContent)
+                }
+                className="w-full"
+              >
+                To the content!
+              </Button>
+            </div>
           </div>
         </AppPage>
       )}
