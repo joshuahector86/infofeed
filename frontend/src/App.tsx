@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { appUrls } from "./utils/urls";
 import { SignUpEmail, SignUpIntro, SignUpPassword } from "./_auth/forms";
 import { WelcomeScreen } from "./_auth/pages";
-import { Home, ExploreFeed } from "./_root/pages";
+import { Home } from "./_root/pages";
 
 function App() {
   return (
@@ -25,9 +25,6 @@ function App() {
       <Route path={appUrls.likedNavCollectionHref} element={<Home />} />
       <Route path={appUrls.subbedNavContentHref} element={<Home />} />
       <Route path={appUrls.settingsNavHref} element={<Home />} />
-
-      {/* EXPLORE ROUTES */}
-      <Route path={appUrls.exploreHref} element={<ExploreFeed />} />
     </Routes>
   );
 }

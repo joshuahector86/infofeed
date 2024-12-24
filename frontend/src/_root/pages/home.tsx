@@ -1,10 +1,9 @@
 import AppTitle from "@/components/apptitle";
 import AppPage from "@/components/page_layouts/app-page";
 import { Button } from "@/components/ui/button";
-import { appUrls } from "@/utils/urls";
 import { AlignJustify, PlusIcon } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import ExploreFeed from "./explore-feed";
 
 const Home = () => {
   const [hasSubscribedToContent, setHasSubscribedToContent] = useState(true);
@@ -24,7 +23,7 @@ const Home = () => {
     <div>
       {hasSubscribedToContent ? (
         <AppPage>
-          hi
+          <ExploreFeed />
           <ToggleSubButton />
         </AppPage>
       ) : (
@@ -37,12 +36,13 @@ const Home = () => {
 
           <div className="h-[50%] flex flex-col gap-1">
             <h2>Subscribe to some content to get started!</h2>
-            <Link to={appUrls.exploreHref}>
-              <Button variant={"customDefault"} className="w-full">
-                To the content!
-              </Button>
-            </Link>
-            <ToggleSubButton />
+            <Button
+              variant={"customDefault"}
+              onClick={() => setHasSubscribedToContent(!hasSubscribedToContent)}
+              className="w-full"
+            >
+              To the content!
+            </Button>
           </div>
         </AppPage>
       )}

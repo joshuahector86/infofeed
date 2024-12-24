@@ -12,7 +12,6 @@ export const appUrls = {
 
   // HOME FEED URLS
   homeHref: "/",
-  exploreHref: "/explore",
 
   // Navbar URLS
   subbedNavContentHref: "/subbed",
