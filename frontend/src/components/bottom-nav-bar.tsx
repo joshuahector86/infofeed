@@ -29,7 +29,7 @@ const BottomNavBar = () => {
     },
   ];
   return (
-    <div className="bg-navbar h-[100px] w-full flex justify-between p-8 max-w-[500px]">
+    <div className="fixed bottom-0 bg-navbar h-[100px] w-full flex justify-between p-8 max-w-[500px]">
       {bottomBarLinks.map((item) => (
         <div key={item.key}>{item.name}</div>
       ))}
