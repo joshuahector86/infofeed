@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SignUpIntro = () => {
   return (
     <AuthenticationPage>
-      <div className="flex flex-col justify-between h-full w-full">
+      <div className="flex flex-col justify-between h-full w-full pt-10">
         <h1 className="text-2xl flex flex-col items-center font-thin">
           Everything you need it <br />
           <p>to be.</p>

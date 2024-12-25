@@ -12,13 +12,13 @@ const BottomNavBar = () => {
   const bottomBarLinks = [
     {
       name: "Profile",
-      href: appUrls.homeHref,
+      href: appUrls.userProfileHref,
       key: 1,
       icon: profileIcon,
     },
     {
       name: "Subbbed",
-      href: appUrls.subbedNavContentHref,
+      href: appUrls.subbedHref,
       key: 2,
       icon: subbedIcon,
     },
@@ -30,13 +30,13 @@ const BottomNavBar = () => {
     },
     {
       name: "Liked",
-      href: appUrls.likedNavCollectionHref,
+      href: appUrls.likedHref,
       key: 4,
       icon: heartIcon,
     },
     {
       name: "Settings",
-      href: appUrls.settingsNavHref,
+      href: appUrls.settingsHref,
       key: 5,
       icon: settingsIcon,
     },

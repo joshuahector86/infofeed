@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { appUrls } from "./utils/urls";
 import { SignUpEmail, SignUpIntro, SignUpPassword } from "./_auth/forms";
 import { WelcomeScreen } from "./_auth/pages";
-import { Home } from "./_root/pages";
+import { Home, Liked, Settings, Subbed, UserProfilePage } from "./_root/pages";
 
 function App() {
   return (
@@ -21,10 +21,17 @@ function App() {
       {/* HOME ROUTES */}
       <Route path={appUrls.homeHref} element={<Home />} />
 
-      {/* HOME NAVBAR ROUTES */}
-      <Route path={appUrls.likedNavCollectionHref} element={<Home />} />
-      <Route path={appUrls.subbedNavContentHref} element={<Home />} />
-      <Route path={appUrls.settingsNavHref} element={<Home />} />
+      {/* USER PROFILE ROUTES */}
+      <Route path={appUrls.userProfileHref} element={<UserProfilePage />} />
+
+      {/* LIKED ROUTES */}
+      <Route path={appUrls.likedHref} element={<Liked />} />
+
+      {/* SUBBED ROUTES */}
+      <Route path={appUrls.subbedHref} element={<Subbed />} />
+
+      {/* SETTINGS ROUTES */}
+      <Route path={appUrls.settingsHref} element={<Settings />} />
     </Routes>
   );
 }
