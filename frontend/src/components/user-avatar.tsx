@@ -1,7 +1,8 @@
 interface AvatarItemsProps {
   src: string;
-  height: number;
-  width: number;
+  height?: number | string;
+  width?: number | string;
+  maxWidth?: number | string;
   userId?: string;
   gap?: number;
   fontSize?: string;
@@ -13,6 +14,7 @@ const UserAvatar: React.FC<AvatarItemsProps> = ({
   userId,
   height,
   width,
+  maxWidth,
   gap,
   fontSize,
   userName,
@@ -23,7 +25,8 @@ const UserAvatar: React.FC<AvatarItemsProps> = ({
         src={src}
         style={{
           height: height,
-          width: `${width}%`,
+          width: width,
+          maxWidth: maxWidth,
         }}
         alt="user-img"
         className="rounded-full"

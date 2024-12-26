@@ -23,5 +23,5 @@ export const appUrls = {
   likedHref: "/liked",
 
   // SETTINGS URLS
-  settingsHref: "settings",
+  settingsHref: "/settings",
 };

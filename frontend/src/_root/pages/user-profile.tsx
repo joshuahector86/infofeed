@@ -3,30 +3,35 @@ import UserAvatar from "@/components/user-avatar";
 import profilePhoto from "../../mock-api/images/profile_photo.jpg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
+import UserProfileFeed from "@/components/profile-components/user-profile-feed";
+import UserProfileSecurity from "@/components/profile-components/user-profile-security";
 
 const UserProfilePage = () => {
   return (
     <AppPage>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 w-full">
         <UserAvatar
           src={profilePhoto}
           userName="AnimeBoi727"
           userId="879456216"
           fontSize="2xl"
           gap={20}
-          height={115}
-          width={40}
+          width={"50%"}
+          maxWidth={130}
+          height={"8rem"}
         />
         <Tabs defaultValue="profile" className="w-full">
           <TabsList className="bg-transparent">
             <TabsTrigger value="profile">Profile</TabsTrigger>
             <TabsTrigger value="security">Secuirty</TabsTrigger>
           </TabsList>
-          <Separator className="bg-white" />
+          <Separator className="bg-white " />
           <TabsContent value="profile">
-            Make changes to your profile here.
+            <UserProfileFeed />
           </TabsContent>
-          <TabsContent value="security">Change your security here.</TabsContent>
+          <TabsContent value="security">
+            <UserProfileSecurity />
+          </TabsContent>
         </Tabs>
       </div>
     </AppPage>
