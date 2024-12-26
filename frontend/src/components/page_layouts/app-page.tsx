@@ -8,7 +8,7 @@ interface AppPageProps {
 const AppPage: React.FC<AppPageProps> = ({ children }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="overflow-y-auto mb-10 p-10">{children}</div>
+      <div className="overflow-y-auto mb-10 p-10 max-w-[500px]">{children}</div>
 
       <BottomNavBar />
     </div>

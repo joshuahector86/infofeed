@@ -13,8 +13,15 @@ export const appUrls = {
   // HOME FEED URLS
   homeHref: "/",
 
-  // Navbar URLS
-  subbedNavContentHref: "/subbed",
-  likedNavCollectionHref: "/liked",
-  settingsNavHref: "/settings",
+  // USER PROFILE URLS
+  userProfileHref: "/user-profile",
+
+  // SUBBERD URLS
+  subbedHref: "/subbed",
+
+  // LIKED URLS
+  likedHref: "/liked",
+
+  // SETTINGS URLS
+  settingsHref: "/settings",
 };

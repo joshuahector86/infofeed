@@ -1,14 +1,16 @@
 import nezuko from "./images/nezukoMockApi.jpg";
 import cat from "./images/catMockAPI.jpeg";
 import genericHuman from "./images/genericPerson.jpg";
+import profilePhoto from "./images/profile_photo.jpg";
 
 export const mockDataCards = [
   {
     title: "Jujutsu Kaisen",
-    useId: "AnimeBoi727",
+    userId: "49816554891",
+    userName: "AnimeBoi727",
     date: "Nov 21, 2057",
     cardImage: nezuko,
-    userImage: genericHuman,
+    userImage: profilePhoto,
     category: "#Anime",
     caption: `
     OMG, have you seen the latest episode of 
@@ -22,7 +24,8 @@ export const mockDataCards = [
   },
   {
     title: "The Most Handsome Boi",
-    useId: "CatChick33",
+    userId: "97856623",
+    userName: "CatChick33",
     date: "Dec 25, 2024",
     cardImage: cat,
     userImage: genericHuman,

@@ -5,7 +5,7 @@ import { useState } from "react";
 import ExploreFeed from "./explore-feed";
 
 const Home = () => {
-  const [hasSubscribedToContent, setHasSubscribedToContent] = useState(true);
+  const [hasSubscribedToContent, setHasSubscribedToContent] = useState(false);
 
   const ToggleSubButton = () => {
     return (
