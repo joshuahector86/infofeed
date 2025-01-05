@@ -11,9 +11,9 @@ import { mockDataCards } from "@/mock-api/mock-api-data";
 const ExploreFeed = () => {
   const data = mockDataCards;
   return (
-    <>
+    <div className="flex flex-col items-center">
       {data.map((card) => (
-        <Card key={card.date} className="w-screen border-none max-w-[500px]">
+        <Card key={card.date} className="border-none max-w-[500px]">
           <CardHeader>
             <h1>{card.title}</h1>
             <h4>{card.date}</h4>
@@ -36,7 +36,7 @@ const ExploreFeed = () => {
           </CardFooter>
         </Card>
       ))}
-    </>
+    </div>
   );
 };
 

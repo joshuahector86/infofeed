@@ -39,3 +39,15 @@ export const mockDataCards = [
     `,
   },
 ];
+
+export const mockProfileSettingsData = [
+  {
+    name: "Erick Grande",
+    userId: "879456216",
+    userName: "AnimeBoi727",
+    numberOfAccountsSubbedTo: 1,
+    numberOfPostsMade: 1,
+    numberOfPostsLiked: 1,
+    numberOfPostsShared: 1,
+  },
+];

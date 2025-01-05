@@ -23,7 +23,7 @@ const UserProfilePage = () => {
         <Tabs defaultValue="profile" className="w-full">
           <TabsList className="bg-transparent">
             <TabsTrigger value="profile">Profile</TabsTrigger>
-            <TabsTrigger value="security">Secuirty</TabsTrigger>
+            <TabsTrigger value="security">Security</TabsTrigger>
           </TabsList>
           <Separator className="bg-white " />
           <TabsContent value="profile">
